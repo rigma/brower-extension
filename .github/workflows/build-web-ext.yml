@@ -16,4 +16,5 @@ jobs:
       - name: Saving Build Artifact
         uses: actions/upload-artifact@v2
         with:
+          name: accropolis-${{ github.sha }}
           path: web-ext-artifacts/accropolis-*.zip
